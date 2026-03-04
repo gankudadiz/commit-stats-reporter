@@ -27,7 +27,8 @@ HTML_TEMPLATE = """
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-color: #f4f6f8;
+            color: #333;
             min-height: 100vh;
             padding: 20px;
         }
@@ -36,234 +37,274 @@ HTML_TEMPLATE = """
             max-width: 1200px;
             margin: 0 auto;
             background: white;
-            border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            border: 1px solid #e1e4e8;
         }
 
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-color: #1e293b;
             color: white;
-            padding: 40px;
-            text-align: center;
+            padding: 30px;
+            text-align: left;
+            border-bottom: 3px solid #3b82f6;
         }
 
         .header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
         }
 
         .header .subtitle {
-            font-size: 16px;
-            opacity: 0.9;
+            font-size: 14px;
+            opacity: 0.8;
+            font-weight: 300;
         }
 
         .summary-cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 30px;
-            background: #f8f9fa;
+            gap: 15px;
+            padding: 20px;
+            background: #fff;
+            border-bottom: 1px solid #e1e4e8;
         }
 
         .card {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border: 1px solid #e1e4e8;
+            border-radius: 4px;
+            text-align: left;
+            box-shadow: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .card .label {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 10px;
+            font-size: 13px;
+            color: #64748b;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .card .value {
-            font-size: 32px;
-            font-weight: bold;
-            color: #333;
+            font-size: 28px;
+            font-weight: 600;
+            color: #0f172a;
         }
 
         .card .value.positive {
-            color: #28a745;
+            color: #10b981;
         }
 
         .card .value.negative {
-            color: #dc3545;
+            color: #ef4444;
         }
 
         .section {
-            padding: 30px;
+            padding: 20px;
         }
 
         .section h2 {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #667eea;
+            font-size: 20px;
+            color: #1e293b;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e1e4e8;
+            font-weight: 500;
         }
 
         .project-card {
             background: white;
-            border-radius: 12px;
+            border: 1px solid #e1e4e8;
+            border-radius: 4px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: none;
             overflow: hidden;
         }
 
         .project-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px;
+            background-color: #f8fafc;
+            color: #1e293b;
+            padding: 15px 20px;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 1px solid #e1e4e8;
         }
 
         .project-header h3 {
-            font-size: 20px;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0;
         }
 
         .project-stats {
             display: flex;
-            gap: 20px;
+            gap: 15px;
         }
 
         .project-stats span {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 14px;
+            background: #e2e8f0;
+            color: #334155;
+            padding: 4px 10px;
+            border-radius: 2px;
+            font-size: 13px;
+            font-weight: 500;
         }
 
         .project-content {
-            padding: 20px;
+            padding: 0;
+            overflow-x: auto;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
+            font-size: 13px;
         }
 
         th, td {
-            padding: 12px;
+            padding: 12px 20px;
             text-align: left;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #e1e4e8;
         }
 
         th {
-            background: #f8f9fa;
+            background: #f8fafc;
             font-weight: 600;
-            color: #333;
-            font-size: 14px;
+            color: #475569;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.5px;
         }
 
         td {
-            font-size: 14px;
-            color: #555;
+            color: #334155;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
         }
 
         tr:hover {
-            background: #f8f9fa;
+            background: #f1f5f9;
         }
 
         .commit-hash {
-            font-family: "Courier New", monospace;
-            background: #f0f0f0;
-            padding: 3px 8px;
-            border-radius: 4px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            background: #f1f5f9;
+            color: #475569;
+            padding: 3px 6px;
+            border-radius: 2px;
             font-size: 12px;
+            border: 1px solid #e2e8f0;
         }
 
         .message {
-            max-width: 300px;
+            max-width: 400px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
 
         .positive {
-            color: #28a745;
+            color: #10b981;
         }
 
         .negative {
-            color: #dc3545;
+            color: #ef4444;
         }
 
         .chart-container {
-            padding: 30px;
-            background: #f8f9fa;
+            padding: 20px;
+            background: #fff;
+            border-top: 1px solid #e1e4e8;
         }
 
         .chart {
             background: white;
-            border-radius: 12px;
+            border: 1px solid #e1e4e8;
+            border-radius: 4px;
             padding: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 0;
         }
 
         .chart h3 {
-            margin-bottom: 15px;
-            color: #333;
+            margin-bottom: 20px;
+            color: #1e293b;
+            font-size: 16px;
+            font-weight: 600;
+            border-bottom: 1px solid #e1e4e8;
+            padding-bottom: 8px;
         }
 
         .bar-chart {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 15px;
         }
 
         .bar-item {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 15px;
         }
 
         .bar-label {
-            width: 150px;
+            width: 180px;
             font-size: 14px;
-            color: #555;
+            color: #334155;
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: right;
         }
 
         .bar-wrapper {
             flex: 1;
-            height: 24px;
-            background: #e9ecef;
-            border-radius: 12px;
+            height: 12px;
+            background: #f1f5f9;
+            border-radius: 2px;
             overflow: hidden;
         }
 
         .bar {
             height: 100%;
-            border-radius: 12px;
+            border-radius: 2px;
             transition: width 0.3s ease;
         }
 
         .bar.insertions {
-            background: linear-gradient(90deg, #28a745, #34ce57);
+            background-color: #3b82f6;
         }
 
         .bar.deletions {
-            background: linear-gradient(90deg, #dc3545, #e4606d);
+            background-color: #ef4444;
         }
 
         .bar-value {
-            width: 60px;
-            text-align: right;
+            width: 70px;
+            text-align: left;
             font-size: 14px;
-            font-weight: 600;
+            font-weight: 500;
         }
 
         .footer {
-            background: #333;
-            color: white;
-            padding: 20px;
+            background: #f8fafc;
+            color: #64748b;
+            padding: 15px 20px;
             text-align: center;
-            font-size: 14px;
+            font-size: 12px;
+            border-top: 1px solid #e1e4e8;
         }
 
         @media (max-width: 768px) {
@@ -274,6 +315,7 @@ HTML_TEMPLATE = """
             .project-stats {
                 flex-direction: column;
                 gap: 5px;
+                align-items: flex-start;
             }
 
             table {
@@ -281,7 +323,26 @@ HTML_TEMPLATE = """
             }
 
             th, td {
-                padding: 8px 4px;
+                padding: 8px;
+            }
+            
+            .message {
+                max-width: 150px;
+            }
+            
+            .bar-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+            
+            .bar-label {
+                width: auto;
+                text-align: left;
+            }
+            
+            .bar-wrapper {
+                width: 100%;
             }
         }
     </style>
