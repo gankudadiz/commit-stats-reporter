@@ -1,0 +1,7 @@
+# 代码统计工具依赖
+
+# Excel 操作
+openpyxl>=3.0.0
+
+# HTML 模板
+jinja2>=3.0.0
