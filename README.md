@@ -1,6 +1,44 @@
 # 代码统计工具 (Code Statistics Tool)
 
-[简体中文](#简体中文) | [English](#english) | [日本語](#日本語)
+<div align="center">
+  <img src="public/封面图.jpg" alt="代码统计工具" width="100%">
+</div>
+
+<p align="center">
+  <b>用于高效统计 Git/SVN 项目代码改动行数，一键生成可视化 HTML 与 Excel 报告 🚀</b>
+</p>
+
+<p align="center">
+  <a href="#简体中文">简体中文</a> | <a href="#english">English</a> | <a href="#日本語">日本語</a>
+</p>
+
+---
+
+## 💎 演示效果 / Showcase
+
+<p align="center">
+  <img src="public/导出html界面1.png" alt="HTML Report" width="100%">
+  <br><i>📊 直观的多维度 HTML 统计报表</i>
+</p>
+
+<details>
+<summary><b>✨ 点击展开查看更多功能演示 / Click to expand more screenshots ✨</b></summary>
+<br/>
+
+### 📑 Excel 详尽数据报表
+*按项目、多维度聚合的开发者数据输出，方便二次加工或直接汇报。*
+<p align="center">
+  <img src="public/导出excel界面1.png" width="49%">
+  <img src="public/导出excel界面2.png" width="49%">
+</p>
+
+### 💻 友好的终端交互体验
+*智能引导式菜单，支持自由选择项目与统计时间方位，简单易用。*
+<p align="center">
+  <img src="public/终端交互界面1.png" width="49%">
+  <img src="public/终端交互界面2.png" width="49%">
+</p>
+</details>
 
 ---
 
