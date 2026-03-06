@@ -9,6 +9,14 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/github/license/gankudadiz/commit-stats-reporter?style=flat-square" alt="License">
+  <img src="https://img.shields.io/badge/python-3.7+-blue.svg?style=flat-square" alt="Python Version">
+  <img src="https://img.shields.io/github/stars/gankudadiz/commit-stats-reporter?style=flat-square" alt="GitHub stars">
+  <img src="https://img.shields.io/github/issues/gankudadiz/commit-stats-reporter?style=flat-square" alt="GitHub issues">
+  <img src="https://img.shields.io/github/forks/gankudadiz/commit-stats-reporter?style=flat-square" alt="GitHub forks">
+</p>
+
+<p align="center">
   <a href="#简体中文">简体中文</a> | <a href="#english">English</a> | <a href="#日本語">日本語</a>
 </p>
 
